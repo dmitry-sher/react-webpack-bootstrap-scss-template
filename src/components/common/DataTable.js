@@ -84,6 +84,7 @@ export const DataTable = (props) => {
   const table = [
     enablePaging ? (
       <div className="pages" key="pages-top">
+        {showPerPageSelector ? perPageSelector : null}
         <div className="space"></div>
         {pagesRow}
       </div>
